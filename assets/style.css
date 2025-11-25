@@ -8,7 +8,17 @@ body {
   background: #fafafa;
 }
 header {
-  background: #004d80; /* navy-blue journal accent */
+  .society-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
+.society-logo-link {
+  display: flex;
+  align-items: center;
+}
+background: #004d80; /* navy-blue journal accent */
   color: white;
   padding: 20px 0;
   text-align: center;
