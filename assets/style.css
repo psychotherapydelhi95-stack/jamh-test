@@ -1,4 +1,5 @@
 /* assets/style.css */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,58 +8,70 @@ body {
   color: #333;
   background: #fafafa;
 }
-header {
-  .society-logo {
-  height: 46px;
-  width: auto;
-  display: block;
-}
 
-.society-logo-link {
-  display: flex;
-  align-items: center;
-}
-background: #004d80; /* navy-blue journal accent */
+header {
+  background: #004d80; /* navy-blue journal accent */
   color: white;
   padding: 20px 0;
   text-align: center;
+  position: relative;   /* ➤ enables top-right logo placement */
 }
+
 header h1 {
   margin: 0;
   font-size: 2.4rem;
 }
+
 nav {
   margin-top: 10px;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
 }
+
+/* ✅ Society Logo — Top Right Corner */
+.header-logo {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  height: 60px;
+  width: auto;
+  pointer-events: none; /* keeps it non-clickable */
+}
+
 main {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
 .article-list h2 {
   font-size: 1.8rem;
   color: #004d80;
 }
+
 .article-list ul {
   list-style: none;
   padding: 0;
 }
+
 .article-list ul li {
   margin: 12px 0;
 }
+
 .article-list ul li a {
   color: #004d80;
   text-decoration: none;
 }
+
 .article-list ul li a:hover {
   text-decoration: underline;
 }
+
 footer {
   background: #004d80;
   color: white;
@@ -66,6 +79,7 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
 }
+
 .submit-btn {
   display: inline-block;
   padding: 12px 20px;
